@@ -9,6 +9,7 @@ import { ReverseIfDirective } from './reverse-if.directive';
 import { ExerciseDirective } from './exercise.directive';
 import { LoginComponent } from './login/login.component';
 import { LoginexerciseComponent } from './loginexercise/loginexercise.component';
+import { TransactionDetailsComponent } from './transaction-details/transaction-details.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LoginexerciseComponent } from './loginexercise/loginexercise.component'
     ReverseIfDirective,
     ExerciseDirective,
     LoginComponent,
-    LoginexerciseComponent
+    LoginexerciseComponent,
+    TransactionDetailsComponent
   ],
   imports: [
     BrowserModule,
