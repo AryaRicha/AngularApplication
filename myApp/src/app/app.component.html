@@ -1,0 +1,57 @@
+<!-- <input type="text" [(ngModel)]='color'/>
+<button appButton [buttonColor]='color'>Click Me!!</button> -->
+
+
+<!-- <br/><br/><br/>
+
+<p>--- Attribute Directive Exercise--</p>
+
+<div>
+  <h1>My First Directive App</h1>
+  <p>Choose any of these color</p>
+  <input type='radio' value='green' name='color' [(ngModel)]='color' />green
+  <input type='radio' value='blue' name='color' [(ngModel)]='color'/>Blue
+  <input type='radio' value='red' name='color' [(ngModel)]='color'/>Red
+  <button appButton [buttonColor]='color'>Click again!</button>
+</div> -->
+
+<p>---Structural Directive--</p>
+
+
+<button (click)="condition=!condition">{{condition ? 'Display Content' : 'Remove Content'}}</button>
+<p *appReverseIf="condition">
+    The content gets displayed when condition becomes false
+</p>
+
+<br/>
+{{"lapTop"|uppercase}}
+<br/>
+{{ "product details" | titlecase }}
+
+
+<div>
+  <p class='text-warning display-4'>Custom Structrud Directive!! Repeat the quote after me.</p>
+  <p class='text-primary text-center'>select the quote to repeat</p>
+  <div class="text-center">
+    <select [(ngModel)]='name' >
+      <option *ngFor='let q of quotesArray' value={{q}} >{{q}}</option>
+      
+    </select><br/><br/>
+    <!-- <div appExercise>
+    <input type='number'  [noOfTimes]='noOfTimes1' /><p class='text-primary'>no of times</p>
+  </div> -->
+  <input type='number' [(ngModel)]='num' class='text-center'><br/>
+  <!-- {{name}}
+  {{num}} -->
+  <div class='text-center'>And It Says...</div>
+  <p *appExercise='num' class='text-success'>{{name}}</p>
+
+  </div>
+  
+  
+  
+  
+  
+</div>
+<app-login></app-login>
+<app-loginexercise></app-loginexercise>

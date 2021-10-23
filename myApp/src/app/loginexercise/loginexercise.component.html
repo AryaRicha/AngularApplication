@@ -1,0 +1,22 @@
+<p>loginexercise works!</p>
+
+<br/><br/>
+<div>
+    <table class="table">
+        <div *ngFor='let emp of employeeData'>
+            <tr>
+                <td>{{emp.empId}}</td>
+                <td>{{emp.empName}}</td>
+                <td>{{emp.age}}</td>
+                <td><button (click)='isClick=true' #button1>update</button></td>
+            </tr>
+            <div *ngIf='isClick'>
+                <p>Emplpyee,{{emp.empName}} details with Id,{{emp.empId}}</p>
+                <button>update details</button>
+                
+            </div>
+        </div>
+    </table>
+    
+</div>
+
